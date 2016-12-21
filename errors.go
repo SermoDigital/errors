@@ -51,7 +51,7 @@ func Unauth(err error) error {
 	return Grpc(codes.Unauthenticated, err)
 }
 
-// Forbidden returns the provided error wrapped with a gRPC Forbidden
+// Forbidden returns the provided error wrapped with a gRPC Permission Denied
 // error code.
 func Forbidden(err error) error {
 	return Grpc(codes.PermissionDenied, err)
