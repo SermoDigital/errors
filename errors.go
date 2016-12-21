@@ -1,6 +1,4 @@
-// Copyright (c) 2015-2016 Sermo Digital, LLC.
-// Unauthorized copying of this file via any medium is prohibited.
-
+// Package errors provides utility routines for errors.
 package errors
 
 import (
