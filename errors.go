@@ -80,3 +80,8 @@ func FailedPrecondition(err error) error {
 func Denied(err error) error {
 	return Grpc(codes.PermissionDenied, err)
 }
+
+// Unknown returns the provided error wrapped with a gRPC Unknown error code.
+func Unknown(err error) error {
+	return Grpc(codes.Unknown, err)
+}
